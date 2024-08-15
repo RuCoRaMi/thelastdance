@@ -1,0 +1,93 @@
+Kaggle
+Train loss: 0.25
+Train Accuracy: 91.85 %
+Test loss: 0.09 
+Test Accuracy: 97.31 %
+
+Run 1
+Train loss: 0.27
+Train Accuracy: 91.22 %
+Test loss: 0.13 
+Test Accuracy: 95.55 %
+
+Run 2
+Train loss: 0.96
+Train Accuracy: 71.27 %
+Test loss: 0.63 
+Test Accuracy: 77.34 %
+What Changed : 
+Add Dense layers from 2 -> 4
+Add Dropout layers from 3 -> 5 (with last layers dropout rate = 0.25)
+
+Run 3
+Train loss: 0.37
+Train Accuracy: 86.52 %
+Test loss: 0.18
+Test Accuracy: 92.59 %
+What Changed : 
+Remove one dropout layers (4 layers total now)
+Dropout rate flat 0.2 now
+
+Run 4
+Train loss: 0.24
+Train Accuracy: 92.17%
+Test loss: 0.06
+Test Accuracy: 97.80 %
+What Changed : 
+Removed one dense layer (the 512 units)
+Changed batch_size from 32 -> 48
+
+Run 5
+Train loss: 0.25
+Train Accuracy: 90.72 %
+Test loss: 0.19 
+Test Accuracy: 91.92 %
+What Changed : 
+Add the 512 units dense layer back
+Changed batch_size from 48 -> 64
+
+Run 6
+Train loss: 0.28
+Train Accuracy: 93.91 %
+Test loss: 0.05 
+Test Accuracy: 98.45 %
+What Changed : 
+Changed training batch_size from 64 -> 48
+
+Run 7
+Train loss: 0.53
+Train Accuracy: 89.38%
+Test loss: 0.17
+Test Accuracy: 95.09%
+epochs: 42
+What Changed : 
+Adds batch normalization layer under 128 dense
+unfreezed resnet layers from [100:] -> [90:]
+
+Run 8 (11/08/24) Lost Data (LD) but seems not improving
+Train loss: 
+Train Accuracy: %
+Test loss: 
+Test Accuracy: %
+epochs:
+What Changed : 
+make a new colab file
+width & height from 128 -> 224 due to error of unmatching input size
+uploading data from drive instead of Kaggle
+add model architecture visualization
+remove batch normalization layer under 128 dense
+unfreezed resnet layers from [100:] -> [110:]
+
+Run 9 (13/08/24)
+Train loss: 
+Train Accuracy: %
+Test loss: 
+Test Accuracy: %
+epochs:
+What Changed : 
+make a new colab file
+uploading data from drive instead of Kaggle
+undersampling the data to 6500 per class to better distribute 
+add model architecture visualization
+remove batch normalization layer under 128 dense
+unfreezed resnet layers back to [100:]
